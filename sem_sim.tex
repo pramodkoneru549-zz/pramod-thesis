@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%% file typeinst.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is the LaTeX source for the instructions to authors using
+% the LaTeX document class 'llncs.cls' for contributions to
+% the Lecture Notes in Computer Sciences series.
+% http://www.springer.com/lncs       Springer Heidelberg 2006/05/04
+%
+% It may be used as a template for your own input - copy it
+% to a new file with a new name and use it as the basis
+% for your article.
+%
+% NB: the document class 'llncs' has its own and detailed documentation, see
+% ftp://ftp.springer.de/data/pubftp/pub/tex/latex/llncs/latex2e/llncsdoc.pdf
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[runningheads,a4paper]{llncs}
+
+\usepackage{amssymb}
+\setcounter{tocdepth}{3}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{paralist}
+\usepackage{url}
+\usepackage{subfigure}
+\usepackage{listings} 
+\lstloadlanguages{html,xml}
+\definecolor{grey}{rgb}{0.9,0.9,0.9} 
+\lstset{
+        tabsize=2, 
+        frame=single, 
+        breaklines=true, 
+        basicstyle=\footnotesize\ttfamily,
+        backgroundcolor=\color{grey},
+        xleftmargin=0mm,
+        xrightmargin=0mm,
+        captionpos=b
+}
+
+\usepackage{url}
+\urldef{\mailsa}\path|{pavan, pramod, amit}@knoesis.org|    
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\keywordname\enspace\ignorespaces#1}
+
+\graphicspath{./images/}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png}	
+
+\usepackage{color} 
+\definecolor{gray}{rgb}{0.7,0.7,0.7}
+\definecolor{blue}{rgb}{0.1,0.1,0.5}
+\newcommand{\attention}[1]{{\color{red}\textbf{#1}}}
+%\newcommand{\comment}[1]{\textit{\color{blue}#1}}
+%\newcommand{\comment}[2]{{\color{blue}\textit{\textbf{#1}}(\textit{#2})}}
+\newcommand{\comment}[2]{}
+
+%\newcommand{\softdelete}[1]{{\color{gray}\textit{#1}}}
+\newcommand{\softdelete}[1]{}
+
+\newcommand{\uri}[1]{\texttt{#1}}
+\newcommand{\literal}[1]{`\textit{#1}'}
+\newcommand{\BibTeX}{{\sc Bib}\TeX}
+\lstset{basicstyle=\small}
+\begin{document}
+
+\mainmatter  % start of an individual contribution
+
+% first the title is needed
+\title{Thesis Title \thanks{.}}
+
+% a short form should be given in case it is too long for the running head
+\titlerunning{Following Dynamic Events by Detecting Semantically Related Hashtags}
+
+% the name(s) of the author(s) follow(s) next
+%
+% NB: Chinese authors should write their first names(s) in front of
+% their surnames. This ensures that the names appear correctly in
+% the running heads and the author index.
+%
+%\author{Pavan Kapanipathi\and Julia Anaya\and Alexandre Passant}
+%
+% (feature abused for this document to repeat the title also on left hand pages)
+
+% the affiliations are given next; don't give your e-mail address
+% unless you accept that it will be published
+%\author{Pavan Kapanipathi\and Prmod Koneru\and Amit Sheth}
+\author{}
+\authorrunning{P.Koneru}
+
+\institute{
+Kno.e.sis Center, CSE Department\\
+Wright State University, Dayton, OH - USA \\
+{\textbraceleft pramod \textbraceright@knoesis.org}
+}
+%\mailsa\\
+%\url{http://www.deri.ie/}}
+
+%
+% NB: a more complex sample for affiliations and the mapping to the
+% corresponding authors can be found in the file "llncs.dem"
+% (search for the string "\mainmatter" where a contribution starts).
+% "llncs.dem" accompanies the document class "llncs.cls".
+%
+
+%\toctitle{Semantic Multicasting}
+\tocauthor{P. Koneru}
+\maketitle
+
+\begin{abstract}
+In this era of big-date, collecting relevant data is the major first step towards analyzing, let alone get some information of it. There has been a lot of research on analysis part of it but a very little effort has been put on data collection. Also we are in a pace where data on web changes every minute, it has become a necessity rather a mandatory thing to capture that new information. In this paper, we propose a automatic 
+\keywords{Semantic Web, Social Web, Dynamic Events, Twitter}
+\end{abstract}
+\input{introduction.tex}
+%\input{background.tex}
+%\input{architecture.tex}
+%\input{implementation.tex} 
+%\input{related.tex}
+%\input{conclusion.tex}
+
+
+\bibliographystyle{plain}
+\bibliography{sem_sim}
+\end{document}
